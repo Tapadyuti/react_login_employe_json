@@ -11,3 +11,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+nav a.active {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 
+.gradient-custom {
+  /* fallback for old browsers 
+  background: #6a11cb;
+  
+  /* Chrome 10-25, Safari 5.1-6 
+  background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+  background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+  }
+ */
+
+.btn-outline-orange {
+  background-color: #ff5f04;
+  color: #faf3ea;
+}
+
+.btn-outline-orange:hover {
+  background-color: #ff5f04 !important;
+  color: #ffffff !important;
+  box-shadow: 1px 1px 6px 1px #ff5f04;
+}
+
+.btn-outline-light-orange {
+  background-color: #faf3ea;
+  color: #ff5f04;
+}
+
+.btn-outline-light-orange:hover {
+  background-color: #faf3ea !important;
+  color: #ff5f04 !important;
+  box-shadow: 0px 0px 4px 1px #ff5f04;
+}
+
+.form-control:focus {
+  border-color: #faf3ea;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #ffe6d7;
+}
+
+a{
+  color: #ff5f04 !important;
+}
+
+.vh-80{
+  min-height: 80vh !important;
+}
+
+#meeting-time{
+  width: 100%;
+}
