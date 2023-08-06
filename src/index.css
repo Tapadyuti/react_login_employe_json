@@ -70,3 +70,7 @@ a{
 #meeting-time{
   width: 100%;
 }
+
+.ag-center-cols-container{
+  width: 100% !important;
+}

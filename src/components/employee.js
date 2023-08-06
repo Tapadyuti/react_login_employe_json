@@ -17,6 +17,14 @@ const Employee = () => {
 
     const [columnDefs] = useState(employeColumnDef);
 
+    const defaultColDef = useMemo(() => {
+        return {
+          width: 170,
+          sortable: true,
+        };
+      }, []);
+
+
     useEffect(()=>{
         setRowData(window.localStorage.getItem('users'));
     },[window.localStorage.getItem('users'), rowData])
@@ -29,13 +37,13 @@ const Employee = () => {
                         <AgGridReact
                             rowData={rowData}
                             columnDefs={columnDefs}
+                            defaultColDef={defaultColDef}
                             pagination={true}
                             paginationPageSize={10}
                         />
                     </div>
                     <div className='w-100 d-flex justify-content-end align-items-center' style={{'height':'12%'}}>
                         <button className='btn btn-outline-orange btn-lg px-4 fs-6' style={{"height": "6vh", "fontWeight": "600"}} onClick={(e)=> navigate('/add_employee') }>Add Employee</button>
-                        
                     </div>
                 </div>
             </div>

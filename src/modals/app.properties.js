@@ -34,6 +34,6 @@ export const department = ['Admin', 'Developer', 'Manager', 'Helper'];
 export const addEmployeeTemplate = [
     { field: 'emp_name', headerName:'Name', type:'text' },
     { field: 'emp_id',  headerName:'Id', type:'text' },
-    { field: 'department',  headerName:'Department', type:'dropdown' },
+    { field: 'department',  headerName:'Department', type:'dropdown', options:['Admin', 'Developer', 'Manager', 'Helper'] },
     { field: 'doj',  headerName:'Date of joining', type:'date' }
 ]

@@ -1,11 +1,10 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const AuthContext = createContext(null);
 
-export const AuthProvider = ({childern}) => {
+export const AuthProvider = (props) => {
+    const [children, setchildren] = useState(props.children);
     const [user, setUser] = useState(null);
-
-    console.log('Calling Auth Provider');
 
     const login = (user) => {
         setUser(user) 
@@ -14,12 +13,11 @@ export const AuthProvider = ({childern}) => {
     const logout = () => {
         setUser(null);
     }
-    console.log('childern : ', childern);
-    return childern ? <AuthContext.Provider value={{user, login, logout}}>{childern}</AuthContext.Provider>: 'RRR'
+
+    return <AuthContext.Provider value={{user, login, logout}}>{children}</AuthContext.Provider>
 }
 
 
 export const useAuth = () =>{
-    console.log('Calling useAuth');
     return useContext(AuthContext);
 }

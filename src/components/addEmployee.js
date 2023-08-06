@@ -28,7 +28,6 @@ const AddEmployee = () => {
     const [currentDate, setCurrentDate] = useState(dt);
 
     const handleChange = (e) => {
-        console.log('.. handle change e : ', e);
         if (e.target) {
             const { name, value } = e.target;
             setformData({ ...formData, [name]: value });
@@ -36,8 +35,6 @@ const AddEmployee = () => {
         } else {
             setformData({ ...formData, department: e.value });
         }
-        
-        console.log('formData : ', formData);
     };
 
     let deptDD = [];
@@ -64,7 +61,7 @@ const AddEmployee = () => {
                                     {item.type === 'text' ?
                                         <input type="text" className="form-control" name={item.field} id={item.field} placeholder={item.headerName} onChange={handleChange} value={formData[item.field]} />
                                         : item.type === 'dropdown' ? <>
-                                            <Select name={item.field} id={item.field} options={deptDD} onChange={handleChange} />
+                                            <Select name={item.field} id={item.field} options={item.options.map((opt) => ({'label': opt, 'value': opt}) ) } onChange={handleChange} />
                                         </>
                                             : item.type === 'date' ? <>
                                                 <input
