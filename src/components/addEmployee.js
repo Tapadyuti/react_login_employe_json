@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { addEmployeeTemplate, department } from "../modals/app.properties";
+import { addEmployeeTemplate } from "../modals/app.properties";
 import Select from 'react-select';
 import { useNavigate } from "react-router-dom";
 
@@ -36,9 +36,6 @@ const AddEmployee = () => {
             setformData({ ...formData, department: e.value });
         }
     };
-
-    let deptDD = [];
-    department.forEach(item => deptDD.push({ label: item, value: item }))
 
     const navigate = useNavigate();
     const handleSubmit = (event) => {

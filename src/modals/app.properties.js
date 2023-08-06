@@ -29,7 +29,7 @@ export const employeColumnDef = [
     { field: 'doj',  headerName:'Date of joining' }
 ]
 
-export const department = ['Admin', 'Developer', 'Manager', 'Helper'];
+//export const department = ['Admin', 'Developer', 'Manager', 'Helper'];
 
 export const addEmployeeTemplate = [
     { field: 'emp_name', headerName:'Name', type:'text' },
