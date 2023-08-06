@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../utils/auth';
 
+import logo from "./../assets/image/logo.png";
+
 const Login = () => {
     const [user, setUser] = useState('');
     const auth = useAuth();
@@ -28,6 +30,7 @@ const Login = () => {
                                 <div className="card-body p-3 text-center">
 
                                     <div className="mb-md-3 mt-md-3 pb-2">
+                                        <img src={logo} style={{"width": "30px"}}/>
                                         <h2 className="fw-bold mb-2 text-uppercase">Login</h2>
                                         <div className="form-outline  mb-4">
                                             <input type="email" id="typeEmailX" required className="form-control form-control-lg fs-6" name='user' placeholder="User name" value={loginForm.name} onChange={handelChange} />

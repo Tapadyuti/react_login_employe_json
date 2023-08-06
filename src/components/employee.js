@@ -19,7 +19,7 @@ const Employee = () => {
 
     const defaultColDef = useMemo(() => {
         return {
-          width: 170,
+          //width: '25%',
           sortable: true,
         };
       }, []);
