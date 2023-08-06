@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Tapadyuti/reactloginemploye.github.io/static/css/main.0cfb1485.css",
-    "main.js": "/Tapadyuti/reactloginemploye.github.io/static/js/main.9c040e4c.js",
-    "static/js/787.e6b82257.chunk.js": "/Tapadyuti/reactloginemploye.github.io/static/js/787.e6b82257.chunk.js",
-    "static/media/logo.png": "/Tapadyuti/reactloginemploye.github.io/static/media/logo.540e97c7de844e3b772d.png",
-    "index.html": "/Tapadyuti/reactloginemploye.github.io/index.html",
-    "main.0cfb1485.css.map": "/Tapadyuti/reactloginemploye.github.io/static/css/main.0cfb1485.css.map",
-    "main.9c040e4c.js.map": "/Tapadyuti/reactloginemploye.github.io/static/js/main.9c040e4c.js.map",
-    "787.e6b82257.chunk.js.map": "/Tapadyuti/reactloginemploye.github.io/static/js/787.e6b82257.chunk.js.map"
+    "main.css": "/reactloginemploye.github.io/static/css/main.0cfb1485.css",
+    "main.js": "/reactloginemploye.github.io/static/js/main.cf7aa8a1.js",
+    "static/js/787.e6b82257.chunk.js": "/reactloginemploye.github.io/static/js/787.e6b82257.chunk.js",
+    "static/media/logo.png": "/reactloginemploye.github.io/static/media/logo.540e97c7de844e3b772d.png",
+    "index.html": "/reactloginemploye.github.io/index.html",
+    "main.0cfb1485.css.map": "/reactloginemploye.github.io/static/css/main.0cfb1485.css.map",
+    "main.cf7aa8a1.js.map": "/reactloginemploye.github.io/static/js/main.cf7aa8a1.js.map",
+    "787.e6b82257.chunk.js.map": "/reactloginemploye.github.io/static/js/787.e6b82257.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0cfb1485.css",
-    "static/js/main.9c040e4c.js"
+    "static/js/main.cf7aa8a1.js"
   ]
 }
